@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-main);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary: #426696;
+  --secondary: #658ec6;
+  --bg-left: #65dfc9;
+  --bg-right: #6cdbeb;
+  --transparent: 255, 255, 255;
+  --bg-main: linear-gradient(to right top, var(--bg-left), var(--bg-right));
+  --bg-glass: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+h1 {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+h2,
+p {
+  color: var(--secondary);
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: var(--primary);
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+main {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, var(--bg-left), var(--bg-right));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  /* background: white; */
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(1.5rem);
+
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
